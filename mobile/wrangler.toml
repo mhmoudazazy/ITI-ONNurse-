@@ -1,0 +1,13 @@
+name = "nursing-app"
+main = "src/index.js" # Update this path based on your actual entry file
+
+account_id = ""
+workers_dev = true
+
+[env.production]
+name = "nursing-app-production"
+route = "nursing-app.mohamedfawzy942002.workers.dev/*"
+zone_id = "your_actual_zone_id"
+
+[site]
+bucket = "./public"
